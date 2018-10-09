@@ -1,0 +1,8 @@
+#modules
+/node_modules
+
+#misc
+.bashrc
+.babelrc
+package-lock.json
+.env
