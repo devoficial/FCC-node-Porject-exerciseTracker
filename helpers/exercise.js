@@ -73,11 +73,11 @@ exports.addExercises = async (req,res) => {
                     }else{
                         await Exercises.create({
                             username: name,
-                            description: exerciseName,
-                            duration: exerciseDuration,
+                            description: description,
+                            duration: duration,
                             userId: id,
-                            registerDate: dateString,
-                            date: dateString
+                            registerDate: datestring,
+                            date: datestring
                           });
                 
                           res.json({
@@ -85,7 +85,7 @@ exports.addExercises = async (req,res) => {
                             description: description,
                             duration: duration,
                             _id: id,
-                            registerDate: dateString
+                            registerDate: datestring
                           });
                     }
                 }
